@@ -18,6 +18,7 @@ const hbs = exphbs.create({
     partialsDir: 'views/partials',
 });
 
+// Handlebars helper
 hbs.handlebars.registerHelper('isUnavailable', function(stock_status) {
     return stock_status !== 'Available' ? 'unavailable' : '';
   });

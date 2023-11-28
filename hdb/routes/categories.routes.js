@@ -1,10 +1,16 @@
 const express = require("express");
 const router = express.Router();
+const db = require("../config/db");
 
 router.get("/", (req, res) => {
-  res.render("categories", {
-    title: "Categories | Kytes Swimsuits",
-    pageHeader: "Categories - Handlebars Version",
+  let sql = 'SELECT * FROM `categories`';
+  let query = db.query(sql, (err, categories) => {
+    if(err) throw err;
+    res.render("categories", {
+      title: "Categories | Kytes Swimsuits",
+      pageHeader: "Categories - Handlebars Version",
+      categories: categories
+    });
   });
 });
 
