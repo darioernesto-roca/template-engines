@@ -7,11 +7,11 @@ block appContent
                 source(src="./vids/hero-vid-1.mp4" type="video/mp4")
                 | Your browser does not support HTML5 video.
             .hero-text
-                h1 Kytes Swimsuits
+                h1 #{pageHeader}
                 a.btn.anchor(href='#products') Explore More
         section#products.section-cards
             header.section-cards__header
-            h1.section-cards__main-heading Kytes Swimsuits
+            h1.section-cards__main-heading #{pageHeader}
             h2.section-cards__sub-heading Discover the Latest in Swimwear Fashion
             .cards-container
                 - let cards = [1, 2, 3, 4, 5, 6]

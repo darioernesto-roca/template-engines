@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 4040;
-const pug = require('pug');
+// const pug = require('pug');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -19,17 +19,28 @@ app.listen(PORT, function() {
 });
 
 app.get('/', (req, res) => {
-  res.render('home', { title: 'Kytes Swimsuits' });
+  res.render('home', {
+    title: 'Kytes Swimsuits',
+    pageHeader: 'Kytes Swimsuits - Pug Version',});
 });
 
 app.get('/categories', (req, res) => {
-  res.render('categories', { title: 'Categories | Kytes Swimsuits' });
+  res.render('categories', {
+    title: 'Categories | Kytes Swimsuits',
+    pageHeader: 'Categories - Pug Version',
+  });
 });
 
 app.get('/about-us', (req, res) => {
-  res.render('about-us', { title: 'About Us | Kytes Swimsuits' });
+  res.render('about-us', {
+    title: 'About Us | Kytes Swimsuits',
+    pageHeader: 'About Us - Pug Version',
+  });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { title: 'Contact | Kytes Swimsuits' });
+  res.render('contact', {
+    title: 'Contact | Kytes Swimsuits',
+    pageHeader: 'Contact Us - Pug Version',
+  });
 });
