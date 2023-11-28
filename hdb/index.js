@@ -18,6 +18,10 @@ const hbs = exphbs.create({
     partialsDir: 'views/partials',
 });
 
+hbs.handlebars.registerHelper('isUnavailable', function(stock_status) {
+    return stock_status !== 'Available' ? 'unavailable' : '';
+  });
+
 // Set Handlebars as the default template engine.
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
