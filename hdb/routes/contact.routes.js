@@ -1,11 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const contactController = require("../controllers/contact.controller");
 
-router.get("/", (req, res) => {
-  res.render("contact", {
-    title: "Contact | Kytes Swimsuits",
-    pageHeader: "Contact Us - Handlebars Version",
-  });
-});
+router.get("/", contactController.contactController);
 
 module.exports = router;

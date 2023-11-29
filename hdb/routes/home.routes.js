@@ -1,17 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../config/db");
+const homeController = require("../controllers/home.controller");
 
-router.get("/", (req, res) => {
-  let sql = 'SELECT * FROM `table-products`';
-  let query = db.query(sql, (err, products) => {
-    if(err) throw err;
-    res.render("home", {
-      title: "Kytes Swimsuits",
-      pageHeader: "Kytes Swimsuits - Handlebars Version",
-      products: products
-    });
-  });
-});
+router.get("/", homeController.renderHome);
 
 module.exports = router;

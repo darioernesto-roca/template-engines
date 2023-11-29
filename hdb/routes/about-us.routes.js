@@ -1,11 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const aboutUsController = require("../controllers/aboutUs.controller");
 
-router.get("/", (req, res) => {
-  res.render("about-us", {
-    title: "About Us | Kytes Swimsuits",
-    pageHeader: "About Us - Handlebars Version",
-  });
-});
+router.get("/", aboutUsController.aboutUsController);
 
 module.exports = router;
