@@ -1,7 +1,3 @@
-// abstracts
-
-// vendors
-
 // base
 @use 'base/normalize';
 @use 'base/reset';
@@ -10,8 +6,6 @@
 // layout
 @use 'layout/hamburger-button';
 @use 'layout/main-header';
-
-// @use 'layout/main-cover';
 @use 'layout/main-section-cards';
 @use 'layout/main-footer';
 @use 'layout/main-nav-toogle';
