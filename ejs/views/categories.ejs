@@ -14,51 +14,17 @@
 
     <section id="categories" class="section-cards">
         <header class="section-cards__header">
-            <h1 class="section-cards__main-heading">Categories - HTML Version</h1>
+            <h1 class="section-cards__main-heading"><%- pageHeader %> - HTML Version</h1>
         </header>
         <div class="categories-container">
             <div class="categories-grid">
-                <div class="grid-item">White Summer</div>
-                <div class="grid-item">Animal Print Summer</div>
-                <div class="grid-item">Blue Summer</div>
-                <div class="grid-item">Red Summer</div>
-                <div class="grid-item">Orange Summer</div>
-                <div class="grid-item">Beige Summer</div>
-                <div class="grid-item">Bisque Summer</div>
-                <div class="grid-item">Black Summer</div>
-                <div class="grid-item">BlanchedAlmond Summer</div>
-                <div class="grid-item">BlueViolet Summer</div>
-                <div class="grid-item">Brown Summer</div>
-                <div class="grid-item">BurlyWood Summer</div>
-                <div class="grid-item">CadetBlue Summer</div>
-                <div class="grid-item">Chartreuse Summer</div>
-                <div class="grid-item">Chocolate Summer</div>
-                <div class="grid-item">Coral Summer</div>
-                <div class="grid-item">CornflowerBlue Summer</div>
-                <div class="grid-item">Cornsilk Summer</div>
-                <div class="grid-item">Crimson Summer</div>
-                <div class="grid-item">Cyan Summer</div>
-                <div class="grid-item">DarkBlue Summer</div>
-                <div class="grid-item">DarkCyan Summer</div>
-                <div class="grid-item">DarkGoldenRod Summer</div>
-                <div class="grid-item">DarkGray Summer</div>
-                <div class="grid-item">DarkGrey Summer</div>
-                <div class="grid-item">DarkGreen Summer</div>
-                <div class="grid-item">DarkKhaki Summer</div>
-                <div class="grid-item">DarkMagenta Summer</div>
-                <div class="grid-item">DarkOliveGreen Summer</div>
-                <div class="grid-item">Darkorange Summer</div>
-                <div class="grid-item">DarkOrchid Summer</div>
-                <div class="grid-item">DarkRed Summer</div>
-                <div class="grid-item">DarkSalmon Summer</div>
-                <div class="grid-item">DarkSeaGreen Summer</div>
-                <div class="grid-item">DarkSlateBlue Summer</div>
-                <div class="grid-item">DarkSlateGray Summer</div>
-                <div class="grid-item">DarkSlateGrey Summer</div>
-                <div class="grid-item">DarkTurquoise Summer</div>
-                <div class="grid-item">DarkViolet Summer</div>
+                <% categories.forEach(category=> { %>
+                    <div class="grid-item">
+                        <%= category.name %>
+                    </div>
+                    <% }); %>
+
             </div>
-        </div>
     </section>
 
 </main>

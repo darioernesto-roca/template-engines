@@ -11,6 +11,6 @@ router.use('/', homeRoutes);
 router.use('/categories', categoriesRoutes);
 router.use('/about-us', aboutUsRoutes);
 router.use('/contact', contactRoutes);
-router.use('/insert-data', dataRoutes);
+router.use('/data', dataRoutes);
 
 module.exports = router;
