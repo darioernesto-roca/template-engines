@@ -1,0 +1,88 @@
+{
+    "productData": [
+        {
+            "name": "Swimsuit 1",
+            "category": "White Summer",
+            "price": 50.00,
+            "image": "./img/products/img-1.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Swimsuit 2",
+            "category": "Animal Print Summer",
+            "price": 50.00,
+            "image": "./img/products/img-2.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Swimsuit 3",
+            "category": "Blur Summer",
+            "price": 50.00,
+            "image": "./img/products/img-3.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Swimsuit 4",
+            "category": "Red Summer",
+            "price": 50.00,
+            "image": "./img/products/img-4.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Swimsuit 5",
+            "category": "Animal Print Summer",
+            "price": 50.00,
+            "image": "./img/products/img-5.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Swimsuit 6",
+            "category": "Orange Summer",
+            "price": 50.00,
+            "image": "./img/products/img-6.jpg",
+            "stock_status": "Unavailable"
+        }
+    ]
+    ,
+    "categoryData": [
+        { "name": "White Summer" },
+        { "name": "Animal Print Summer" },
+        { "name": "Blue Summer" },
+        { "name": "Red Summer" },
+        { "name": "Orange Summer" },
+        { "name": "Beige Summer" },
+        { "name": "Bisque Summer" },
+        { "name": "Black Summer" },
+        { "name": "BlanchedAlmond Summer" },
+        { "name": "BlueViolet Summer" },
+        { "name": "Brown Summer" },
+        { "name": "BurlyWood Summer" },
+        { "name": "CadetBlue Summer" },
+        { "name": "Chartreuse Summer" },
+        { "name": "Chocolate Summer" },
+        { "name": "Coral Summer" },
+        { "name": "CornflowerBlue Summer" },
+        { "name": "Cornsilk Summer" },
+        { "name": "Crimson Summer" },
+        { "name": "Cyan Summer" },
+        { "name": "DarkBlue Summer" },
+        { "name": "DarkCyan Summer" },
+        { "name": "DarkGoldenRod Summer" },
+        { "name": "DarkGray Summer" },
+        { "name": "DarkGrey Summer" },
+        { "name": "DarkGreen Summer" },
+        { "name": "DarkKhaki Summer" },
+        { "name": "DarkMagenta Summer" },
+        { "name": "DarkOliveGreen Summer" },
+        { "name": "Darkorange Summer" },
+        { "name": "DarkOrchid Summer" },
+        { "name": "DarkRed Summer" },
+        { "name": "DarkSalmon Summer" },
+        { "name": "DarkSeaGreen Summer" },
+        { "name": "DarkSlateBlue Summer" },
+        { "name": "DarkSlateGray Summer" },
+        { "name": "DarkSlateGrey Summer" },
+        { "name": "DarkTurquoise Summer" },
+        { "name": "DarkViolet Summer" }
+    ]
+}

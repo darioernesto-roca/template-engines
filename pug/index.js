@@ -18,16 +18,23 @@ app.listen(PORT, function() {
     console.log(`🌎 Server listening on http://localhost:${PORT}`);
 });
 
+const fs = require('fs');
+let rawData = fs.readFileSync('data.json');
+let data = JSON.parse(rawData);
+
 app.get('/', (req, res) => {
   res.render('home', {
     title: 'Kytes Swimsuits',
-    pageHeader: 'Kytes Swimsuits - Pug Version',});
+    pageHeader: 'Kytes Swimsuits - Pug Version',
+    data: data,
+  });
 });
 
 app.get('/categories', (req, res) => {
   res.render('categories', {
     title: 'Categories | Kytes Swimsuits',
     pageHeader: 'Categories - Pug Version',
+    data: data,
   });
 });
 
