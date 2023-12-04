@@ -4,10 +4,11 @@ const app = express();
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const routes = require('./routes/index');
+const multer = require('multer');
 const PORT = process.env.PORT || 8080;
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); //  For sending form data from the client side to the server side.
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
